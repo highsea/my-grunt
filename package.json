@@ -1,7 +1,7 @@
 {
-  "name": "grunt-test",
+  "name": "test-grunt",
   "version": "0.0.1",
-  "description": "grunt test",
+  "description": "Grunt 5 minutes to get started",
   "scripts": {
     "start": "node app.js"
   },
