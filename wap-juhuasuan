@@ -1,0 +1,30 @@
+{{#data}}
+<li>
+    <a href="{{{detailUrl}}}">
+        <div class="item-pic"><img src="{{picWideUrl}}" width="120" height="80" class=""></div>
+        <div class="item-info">
+            <h3 class="good-name">{{{subName}}}</h3>
+            <div class="pirce">
+                <b class="promote-price">￥{{activityPrice}}</b>
+                <span class="cost-price">￥<del>{{originalPrice}}</del></span>
+            </div>
+            
+            <div class="buy-now">
+                <span class="discount">{{discount}}.0 折</span>
+                {{#isAvail}}
+                    <span class="buy-count">{{soldCount}} 人已购买</span>                
+                {{/isAvail}}
+                {{#isNotBegin}}
+                    <span class="item-type not-begin">即将开始</span>
+                {{/isNotBegin}}
+                {{#isChance}}
+                    <span class="item-type chance">还有机会</span>
+                {{/isChance}}
+                {{#isSoldOut}}
+                    <span class="item-type soldout">卖光了...</span>
+                {{/isSoldOut}}
+            </div>
+        </div>
+    </a>
+</li>
+{{/data}}
